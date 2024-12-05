@@ -7,6 +7,11 @@
 }
 
 
+
+html{
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: cra;
     src: url(font/CreatoDisplay-Medium.otf);
