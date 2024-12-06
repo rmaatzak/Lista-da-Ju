@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="reserv.css">
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <img src="img/index/Rectangle_2.png" alt="" class="logo">
+            <nav class="menu1">
+              <a href="index.html" class="underline-effect" >Home</a>
+              <a href="#A1" class="underline-effect">About us</a>
+              <a href="reserv.html" class="underline-effect">Reservation</a>
+              <a href="menu.html" class="underline-effect">Menu</a>
+            </nav>
+        </div>
+        <div class="linha"></div>
+      </header> 
+
+      <div class="all">
+          <input type="text" name="name" class="bt02" placeholder="   Name">
+          <div class="info">
+            <input type="date" name="date" class="bt01">
+            <input type="time" name="time" class="bt01">
+            <input type="number" name="people" class="bt01" placeholder="   Number of people">
+          </div>
+          <input type="email" name="email" class="bt02" placeholder="    Email">
+          <input type="tel" name="telephone" class="bt02" placeholder="    Telephone">
+          <button type="button" id="sendButton" class="bt">Send</button>
+        </form>
+      </div>
+
+      <div class="file"></div>
+<footer style="background-color: #7570A1; padding: 30px; text-align: center;">
+  <p style="color: #ffffff; font-size: 16px; margin: 0; font-family: craL;">
+    MixLix | 2000
+  </p>
+</footer>
+      
+
+      <script>
+        document.querySelector('.bt').addEventListener('click', function () {
+          // Seleciona todos os inputs dentro do container com a classe 'all'
+          const inputs = document.querySelectorAll('.all input');
+      
+          // Itera sobre os inputs e limpa o valor de cada um
+          inputs.forEach(input => {
+            input.value = '';
+          });
+        });
+
+  
+  document.querySelector('.bt').addEventListener('click', function () {
+    // Seleciona todos os inputs dentro do container com a classe 'all'
+    const inputs = document.querySelectorAll('.all input');
+
+    // Itera sobre os inputs e limpa o valor de cada um
+    inputs.forEach(input => {
+      input.value = '';
+    });
+
+    // Exibe a notificação com o alert
+    alert('Reserva feita!');
+  });
+
+
+      </script>
+      
+</body>
+</html>
