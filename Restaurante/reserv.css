@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scrollbar-width: thin;
+    scrollbar-color:  #7570A1 #ffffff;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: cra;
+    src: url(font/CreatoDisplay-Medium.otf);
+}
+
+@font-face {
+    font-family: craR;
+    src: url(font/CreatoDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: agua;
+    src: url(font/AguafinaScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: craL;
+    src: url(font/CreatoDisplay-Light.otf);
+}
+
+.linha{
+    height: 2px;
+    background-color: #A6AEE0;
+    width: 1525px;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+  justify-content: space-between;
+}
+
+.cabecalho img{
+    height: 90px;
+}
+
+.menu1{
+    margin-right: 70px;
+}
+
+a{
+    margin-left: 25px;
+    text-decoration: none;
+    font-family: cra;
+    color: #8C8686;
+}
+
+.underline-effect {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.underline-effect::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #7570A1;
+    transition: width 0.3s ease-in-out;
+}
+.underline-effect:hover::after {
+    width: 100%;
+}
+
+
+
+/* botoes */
+
+.bt01{
+    background-color: #ffffff;
+    height: 40px;
+    width: 350px;
+    border: #7570A1 solid 2px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: craL;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+.bt02{
+    background-color: #ffffff;
+    height: 40px;
+    width: 1065px;
+    border: #7570A1 solid 2px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: craL;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+.bt{
+    background-color: #7570A1;
+    height: 40px;
+    width: 150px;
+    border: #cfcce7 solid 2px;
+    border-radius: 15px;
+    margin-top: 20px;
+    font-family: cra;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.all{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+::placeholder{
+    color: #A6AEE0;
+}
+
+
+/* footer */
+
+.file{
+    background-image: url(img/index/footer.png);
+    height: 614px;
+    width: 1524px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

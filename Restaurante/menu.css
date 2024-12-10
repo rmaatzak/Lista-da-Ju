@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scrollbar-width: thin;
+    scrollbar-color:  #7570A1 #ffffff;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: cra;
+    src: url(font/CreatoDisplay-Medium.otf);
+}
+
+@font-face {
+    font-family: craR;
+    src: url(font/CreatoDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: agua;
+    src: url(font/AguafinaScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: craL;
+    src: url(font/CreatoDisplay-Light.otf);
+}
+
+.linha{
+    height: 2px;
+    background-color: #A6AEE0;
+    width: 1525px;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+  justify-content: space-between;
+}
+
+.cabecalho img{
+    height: 90px;
+}
+
+.menu1{
+    margin-right: 70px;
+}
+
+a{
+    margin-left: 25px;
+    text-decoration: none;
+    font-family: cra;
+    color: #8C8686;
+}
+
+.underline-effect {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.underline-effect::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #7570A1;
+    transition: width 0.3s ease-in-out;
+}
+.underline-effect:hover::after {
+    width: 100%;
+}
+
+.enjoy{
+    height: 160px;
+    width: 100%;
+    background-color: #D8DCF1;
+    color: white;
+    font-family: cra ;
+    font-size: 30px;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.49);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* partes das comidas */
+
+.bt{
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: #A6AEE0 solid 1px;
+    font-family: craR;
+    color: #8C8686;
+    font-size: 20px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.menu{
+    color: #7570A1;
+    font-family: cra ;
+    font-size: 30px;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.224);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegador{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 20px;
+    padding-right: 30px;
+}
+
+.comida{
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 300px;
+    padding-top: 80px;
+    margin-bottom: 90px;
+}
+
+.bebida{
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 300px;
+    padding-top: 80px;
+    margin-bottom: 90px;
+}
+
+.doce{
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 300px;
+    padding-top: 80px;
+    margin-bottom: 90px;
+}
+
+.nada{
+    padding-top: 150px;
+    height: 150px;
+    width: 100%;
+}
+
+
+
+/* comidas */
+
+.itens{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding-top: 20px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-left: 220px;
+}
+
+.temaki{
+    background-image: url(img/menuu/temaki.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.ramen{
+    background-image: url(img/menuu/Ramen.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.onigiri{
+    background-image: url(img/menuu/Onigiri.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.sukiyaki{
+    background-image: url(img/menuu/Sukiyaki.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.takoyaki{
+    background-image: url(img/menuu/Takoyaki.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.soba{
+    background-image: url(img/menuu/Sobá.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.gyudon{
+    background-image: url(img/menuu/Gyudon.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.yakitori{
+    background-image: url(img/menuu/Yakitori.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.yakisoba{
+    background-image: url(img/menuu/Yakisoba.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.texxt{
+    font-family: cra;
+    font-size: 25px;
+    color: #7570A1;
+    line-height: 10px;
+    margin-top: 20px;
+}
+
+.teext{
+    font-size: 15px;
+    color: #9298c3;
+    margin-top: 5px;
+    font-family: cra;
+    line-height: 25px;
+}
+
+
+/* sobremesa */
+
+.warabi{
+    background-image: url(img/dessert/Warabi.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.sanshoku{
+    background-image: url(img/dessert/Sanshoku\ Dango.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.manju{
+    background-image: url(img/dessert/Manjú.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;  
+}
+
+.taiyaki{
+    background-image: url(img/dessert/Taiyaki.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.wagashis{
+    background-image: url(img/dessert/Wagashi.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.daifuku{
+    background-image: url(img/dessert/Daifuku.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* bebida */
+
+.sakurayu{
+    background-image: url(img/drinks/sukurayu.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.coca{
+        background-image: url(img/drinks/coca.png);
+        height: 180px;
+        width: 300px;
+        background-position: center;
+        background-size: cover;
+}
+
+.water{
+        background-image: url(img/drinks/agua.png);
+        height: 180px;
+        width: 300px;
+        background-position: center;
+        background-size: cover;
+}
+
+.toso{
+    background-image: url(img/drinks/toso.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;  
+}
+
+.awamori{
+    background-image: url(img/drinks/awamori.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.juice{
+    background-image: url(img/drinks/Suco\ de\ Laranja.png);
+    height: 180px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* footer */
+
+.file{
+    background-image: url(img/index/footer.png);
+    height: 614px;
+    width: 1524px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
