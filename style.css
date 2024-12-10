@@ -4,8 +4,18 @@
     border: 0;
 }
 
+@font-face {
+    font-family: CreaB;
+    src: url(font/CreatoDisplay-Bold.otf);
+}
+
+@font-face {
+    font-family: CreaR;
+    src: url(font/CreatoDisplay-Regular.otf);
+}
+
 .linha{
-    height: 4px;
+    height: 2px;
     background-color: #A6AEE0;
 }
 
@@ -13,13 +23,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 113px;
+    height: 100px;
+}
+
+.cabecalho img{
+    height: 80px;
 }
 
 .menu1 a{
     text-decoration: none;
-    color: black;
+    color: #8C8686;
     margin-right: 20px;
+    font-size: 12px;
+    font-family: CreaR;
 }
 
 .menu1{
